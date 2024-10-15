@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color:#00a8cc;
+
+    padding-top: 150px;
+}
+
+header {
+    padding: px px;
+    background-color:#1f426d;
+}
+header {
+    position: fixed;  /* Hace que el header se mantenga fijo */
+    top: 0;          /* Posición en la parte superior */
+    left: 0;         /* Alinea al borde izquierdo */
+    width: 100%;     /* Ocupa todo el ancho de la ventana */
+    z-index: 1000;  /* Asegura que el menú esté por encima de otros elementos */
+    line-height: 1.5;
+}
+
+header img {
+    max-width: 120px;
+    height: auto;
+}
+
+
+
+#inicio {
+    background-image: url('../img/fondo.jpg');
+    height: 400px; /* Cambia 'ruta-de-la-imagen.jpg' por la URL de tu imagen de fondo */
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    display: flex; /* Asegúrate de que el contenedor tenga flexbox */
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    background-color: rgba(180, 120, 120, 0.7);
+    color: white; /* Color del texto */
+    padding: 20px;
+    font-size: 20px; /* Tamaño de la fuente */
+    font-weight: bold; /* Hacer el texto más grueso */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Estilo para los enlaces de navegación */
+.navbar-nav .nav-link {
+    color: aqua !important;
+    font-weight: 600;
+    padding: 0 20px;
+    font-size: 16px;
+}
+
+.navbar-nav .nav-link:hover {
+    background: linear-gradient(to right, #008891, #00a8cc);
+    color: #fff !important;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Estilo general para las tarjetas */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-img-top {
+    border-radius: 10px;
+}
+/*para le video*/
+#video {
+    position: relative;  /* Posicionamiento relativo para el contenedor */
+    overflow: hidden;    /* Oculta cualquier contenido que sobresalga */
+    padding-top: 50.25%; /* Mantiene la relación de aspecto 16:9 (100 / (16/9)) */
+    height: 10px;           /* Altura inicial en 0 para hacer espacio para el video */
+    margin: 10px ;
+}
+
+#video iframe {
+    position: absolute; /* Posicionamiento absoluto para el iframe */
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 90%;      /* Ancho del iframe al 100% del contenedor */
+    height: 90%;     /* Altura del iframe al 100% del contenedor */
+}
+
+
+/* Footer */
+footer {
+    background-color: #0f3057;
+    color: #ffffff;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
